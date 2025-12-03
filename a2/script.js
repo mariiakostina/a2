@@ -40,12 +40,6 @@ function validateForm() {
         alert("Invalid phone");
         return false;
     }
-
-    
-    if (phone && /[^0-9\s\-\(\)\+]/.test(phone)) {
-        alert("Invalid phone number");
-        return false;
-    }
     
 }
 
@@ -59,3 +53,4 @@ function hamburger() {
         logo.style.display = "none";
     }
 }
+
