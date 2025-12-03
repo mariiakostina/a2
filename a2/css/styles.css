@@ -1,0 +1,456 @@
+/*
+Author: Mariia Kostina
+Date: 09/11/2025
+File Name: styles.css
+*/
+
+/* CSS reset */ 
+body, header, nav, main, footer, h1, div,  img, ul {    
+    margin: 0;   
+    padding: 0;   
+    border: 0;     
+}
+
+
+body {   /* Add the body selector */ 
+    background-color: #000;   /* Set the background colour */ 
+}   /* Closing brace for the body selector */
+
+
+
+/* Style rules for mobile viewport */
+header {
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    
+}
+
+header img {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+
+
+main {  
+    display: flow-root;
+    clear: left;
+    background-color: #fff;   
+    padding: 2%;  
+    font-size: 1.15em;    /* clears a float to the left */
+    font-family: 'Roboto Slab', serif;
+}  
+
+img:not(header img):not(#hero img) {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+
+
+.hours {
+    margin-left: 10%;
+} 
+
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+} 
+
+.action {    
+    font-size: 1.35em;     
+    color: #cc0000;     
+    font-weight: bold;        
+}   
+
+
+#general-services, #annual-checkup {      
+    margin: 0 2%;    
+}
+
+
+
+.round {
+    border-radius: 8px;
+} 
+
+.staff-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.staff-item img {
+    width: 100%;  
+    max-width: 300px;
+    object-fit: cover;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    
+}
+
+/*
+#our-staff {
+    clear: left;               
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+*/
+
+#featured-article {
+  clear: left;               
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2; 
+  padding: 1% 2%;
+}
+
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  color: #666600;
+  text-decoration: none;
+}
+
+#hero img {
+    width: 100%;
+    max-height: 375px;
+    object-fit: cover;
+    display: block;
+}
+
+
+#form {
+	margin-top: 2%;
+	background-color: #f2f2f2;
+	padding: 2%;
+    border-radius: 10px;
+    
+}
+
+
+#form h2 {
+	text-align: center;
+}
+
+/* Style rules for form elements */
+fieldset, input, select, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #b3b3b3;
+	font-size: 1em;
+	border-radius: 10px;
+} 
+
+footer p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer p {  
+    font-size: 0.75em;  
+    text-align: center;  
+    color: #fff;  
+    padding: 0 1em;  
+}   
+
+footer p a { 
+    color: #fff;  /* Sets the link colour */ 
+    text-decoration: none;    
+}  
+
+
+.services-columns {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.services-columns > section {
+  background-color: #e8f4fb;  
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
+.featured-article {
+    background-color: #e8f4fb; 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.services-columns ul {
+    list-style-position: inside; 
+    margin-left: 0;              
+    padding-left: 15px;   
+}       
+
+
+.services-columns li {
+    margin-bottom: 6px;           
+}
+
+
+.story-block {
+    background-color: #e8f4fb; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.facilities-block {
+    background-color: #f1f7e8; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) { 
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav, .mobile-nav a.menu-icon {   
+		display: none;   
+	} 
+
+    img:not(header img):not(#hero img) {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+        
+    } 
+
+    nav {  
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+        font-family: 'Francois One', sans-serif;
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align:center;
+        padding: 0.1em 0.75em;
+        text-decoration:none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    
+
+    /* Tablet Viewport: Style rule for form element */
+	form {
+		width: 70%;
+		margin: 0 auto;
+	} 
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+    }
+
+    .staff-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .staff-item img {
+        width: 200px;
+        height: 200px;
+        max-width: none;
+        margin-right: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+} 
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+
+    img:not(header img):not(#hero img) {
+        width: 550px;
+    
+        height: 350px;
+    
+        object-fit: cover;
+}
+
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    } 
+
+
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+    
+    nav li a {
+        padding: 0.5em 1em;
+    } 
+
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+    } 
+
+    #general-services, #annual-checkup{
+        width: 45%;
+        float: left;
+        margin: 0 2%;
+    
+    }
+    
+
+    #out_staff {
+        clear:left;
+    }
+    
+    form {
+		width: auto;
+	}
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		gap: 20px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 3;
+	}
+
+    .staff-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .staff-item img {
+        width: 250px;
+        height: 250px;
+        margin-right:20px;
+        flex-shrink: 0; 
+        margin-left: 0
+    }
+
+}
+
+

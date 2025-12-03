@@ -1,0 +1,130 @@
+<!doctype html>
+ <!-- This website template was created by: Mariia Kostina -->  
+ <html lang="en">
+ <head>
+    <title>100SMILES Dental Care - Contact Us</title> 
+    <script src="script.js"></script> <!-- Link JavaScript to HTML -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css"> 
+</head> 
+<body>
+
+    <div id="container">
+        <!-- Mobile Nav -->
+         <nav class="mobile-nav">
+            <div id="menu-links">   
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a> 
+                <a href="staff.html">Our Staff</a>
+                <a href="services.html">Services</a> 
+                <a href="articles.html">Articles</a> 
+                <a href="contact.html">Contact Us</a>
+            </div>     
+            <a class="menu-icon" onclick="hamburger()"> 
+                <div>&#9776;</div>
+            </a> 
+        </nav>
+
+    <!-- Use the header area for the website name or logo --> 
+    <header>
+        <a href="index.html"><img src="images/100smiles-logo.jpg" alt="100SMILES Dental Care logo"></a>
+    </header>
+
+    
+    
+
+    <nav class="tablet-desktop"> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="services.html">Services</a></li> 
+            <li><a href="articles.html">Articles</a></li> 
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>   
+
+    <main> 
+
+        <div id="form">
+            <h2>Complete the form below to get your  <span class="action">25% discount</span>.</h2>
+
+            <form name="myForm" class="form-grid" action="submitted.html" onsubmit="return validateForm()">
+
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>I would like more information about:</p>
+
+                    <label for="staff"><input type="checkbox" name="interest" id="staff" value="Staff">Staff</label>
+
+                    <label for="services"><input type="checkbox" name="interest" id="services" value="Services">Services</label>
+
+                    <label for="facilities"><input type="checkbox" name="interest" id="facilities" value="Facilities">Facilities</label>
+                    <label for="discounts"><input type="checkbox" name="interest" id="discounts" value="Discounts">Discounts</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Referral Source</legend>
+
+                    <label for="reference">How did you find us?</label>
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+            </form>
+        </div>
+
+        <div id="contact">
+            
+            <h2>Do you want to have a bright smile? Contact us today!</h2>
+
+            <h3><a href="tel:+0750005599">Call us at (07) 5000 5599</a></h3>
+            <h3>Fax: 07 4567 9999</h3>
+
+            <h3>Email us: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></h3>
+            
+            <h3>Visit us at: 33 Fantail Street, Razole, Queensland. </h3>
+
+            <h3>Clinic Hours:</h3>
+            <p>Mon-Fri: 8:30am - 6:30pm<br>Sat-Sun: 8:30am - 1:00pm</p>
+        
+        </div>
+
+    </main> 
+
+    <footer><br>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>  
+        <p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+    </footer>
+
+    </div>
+
+</body> 
+</html> 
